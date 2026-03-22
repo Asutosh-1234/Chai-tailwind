@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai.js — Utility-First CSS Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="chai-bg-gray-900">
+
+    <!-- ── NAVBAR ── -->
+    <nav class="chai-bg-gray-800 chai-flex chai-items-center chai-justify-between chai-px-40 chai-py-16 chai-border-1 chai-border-gray-700">
+
+        <div class="chai-flex chai-items-center chai-gap-8">
+            <div class="chai-bg-blue-500 chai-rounded-md chai-px-8 chai-py-4">
+                <span class="chai-text-white chai-font-bold">C</span>
+            </div>
+            <span class="chai-text-white chai-font-bold chai-text-lg">chai.js</span>
+        </div>
+
+        <div class="chai-flex chai-gap-32 chai-items-center">
+            <a href="#features" class="chai-text-gray-300 chai-font-medium chai-decoration-none">Features</a>
+            <a href="#utilities" class="chai-text-gray-300 chai-font-medium chai-decoration-none">Utilities</a>
+            <a href="#usage" class="chai-text-gray-300 chai-font-medium chai-decoration-none">Docs</a>
+        </div>
+
+        <div class="chai-flex chai-gap-12 chai-items-center">
+            <a href="#" class="chai-text-gray-400 chai-decoration-none chai-font-medium">GitHub</a>
+            <div class="chai-bg-blue-500 chai-px-20 chai-py-8 chai-rounded-lg">
+                <span class="chai-text-white chai-font-bold">Download</span>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- ── HERO ── -->
+    <section class="chai-bg-gray-900 chai-py-80 chai-px-40">
+
+        <!-- top badge -->
+        <div class="chai-flex chai-justify-center chai-mb-24">
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-600 chai-rounded-full chai-px-16 chai-py-6 chai-flex chai-items-center chai-gap-8">
+                <div class="chai-bg-green-500 chai-rounded-full chai-w-8 chai-h-8"></div>
+                <span class="chai-text-gray-300 chai-font-medium">v1.0.0 — open source &amp; free</span>
+            </div>
+        </div>
+
+        <!-- headline -->
+        <div class="chai-text-center chai-mb-20">
+            <div class="chai-flex chai-justify-center chai-mb-8">
+                <span class="chai-text-white chai-font-bold" style="font-family:'Bebas Neue';font-size:7rem;line-height:1;">STYLE HTML</span>
+            </div>
+            <div class="chai-flex chai-justify-center">
+                <span class="chai-text-blue-400 chai-font-bold" style="font-family:'Bebas Neue';font-size:7rem;line-height:1;">WITHOUT CSS.</span>
+            </div>
+        </div>
+
+        <!-- subtext -->
+        <div class="chai-flex chai-justify-center chai-mb-32">
+            <p class="chai-text-gray-400 chai-text-lg chai-text-center chai-font-medium">
+                Write <span class="chai-text-blue-400 chai-font-bold">chai-*</span> class names.
+                chai.js reads, parses, and applies styles automatically.
+                <br>Zero dependencies. Two files. Done.
+            </p>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="chai-flex chai-justify-center chai-gap-16 chai-mb-48">
+            <div class="chai-bg-blue-500 chai-px-32 chai-py-14 chai-rounded-lg">
+                <span class="chai-text-white chai-font-bold chai-text-lg">Get Started →</span>
+            </div>
+            <div class="chai-border-1 chai-border-gray-600 chai-px-32 chai-py-14 chai-rounded-lg">
+                <span class="chai-text-gray-300 chai-font-medium chai-text-lg">View Source</span>
+            </div>
+        </div>
+
+        <!-- code preview card -->
+        <div class="chai-flex chai-justify-center">
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-32 chai-py-24">
+
+                <!-- window dots -->
+                <div class="chai-flex chai-gap-8 chai-mb-20">
+                    <div class="chai-bg-red-500 chai-rounded-full chai-w-12 chai-h-12"></div>
+                    <div class="chai-bg-blue-400 chai-rounded-full chai-w-12 chai-h-12"></div>
+                    <div class="chai-bg-green-500 chai-rounded-full chai-w-12 chai-h-12"></div>
+                </div>
+
+                <p class="chai-text-gray-600 chai-font-medium chai-mb-8">&lt;!-- write this --&gt;</p>
+                <p class="chai-text-gray-300 chai-font-medium">
+                    &lt;<span class="chai-text-blue-400 chai-font-bold">div</span>
+                    <span class="chai-text-green-300 chai-font-medium"> class</span>=<span class="chai-text-blue-300">"chai-flex chai-bg-gray-800 chai-p-20 chai-rounded-lg"</span>&gt;
+                </p>
+                <p class="chai-text-gray-300 chai-font-medium chai-pl-16">
+                    &lt;<span class="chai-text-blue-400 chai-font-bold">h2</span>
+                    <span class="chai-text-green-300"> class</span>=<span class="chai-text-blue-300">"chai-text-xl chai-font-bold chai-text-blue-400"</span>&gt;Hello&lt;/h2&gt;
+                </p>
+                <p class="chai-text-gray-300 chai-font-medium chai-pl-16">
+                    &lt;<span class="chai-text-blue-400 chai-font-bold">p</span>
+                    <span class="chai-text-green-300"> class</span>=<span class="chai-text-blue-300">"chai-text-gray-300 chai-text-sm"</span>&gt;chai.js works.&lt;/p&gt;
+                </p>
+                <p class="chai-text-gray-300 chai-font-medium">&lt;/<span class="chai-text-blue-400 chai-font-bold">div</span>&gt;</p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ── STATS BAR ── -->
+    <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-flex chai-justify-center chai-gap-48 chai-py-24 chai-px-40">
+
+        <div class="chai-text-center">
+            <p class="chai-text-blue-400 chai-font-bold chai-text-xl">2</p>
+            <p class="chai-text-gray-500 chai-font-medium">FILES TO SHIP</p>
+        </div>
+
+        <div class="chai-bg-gray-700 chai-rounded-full" style="width:1px"></div>
+
+        <div class="chai-text-center">
+            <p class="chai-text-blue-400 chai-font-bold chai-text-xl">0</p>
+            <p class="chai-text-gray-500 chai-font-medium">DEPENDENCIES</p>
+        </div>
+
+        <div class="chai-bg-gray-700 chai-rounded-full" style="width:1px"></div>
+
+        <div class="chai-text-center">
+            <p class="chai-text-blue-400 chai-font-bold chai-text-xl">50+</p>
+            <p class="chai-text-gray-500 chai-font-medium">UTILITY CLASSES</p>
+        </div>
+
+        <div class="chai-bg-gray-700 chai-rounded-full" style="width:1px"></div>
+
+        <div class="chai-text-center">
+            <p class="chai-text-blue-400 chai-font-bold chai-text-xl">~5KB</p>
+            <p class="chai-text-gray-500 chai-font-medium">BUNDLE SIZE</p>
+        </div>
+
+    </div>
+
+
+    <!-- ── FEATURES ── -->
+    <section id="features" class="chai-bg-gray-900 chai-py-64 chai-px-40">
+
+        <div class="chai-text-center chai-mb-40">
+            <p class="chai-text-blue-400 chai-font-bold chai-mb-8">// WHY CHAI.JS</p>
+            <p class="chai-text-white chai-font-bold" style="font-family:'Bebas Neue';font-size:3.5rem;line-height:1;">Built different. On purpose.</p>
+        </div>
+
+        <div class="chai-flex chai-justify-center chai-gap-20">
+
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-28 chai-py-28">
+                <div class="chai-bg-blue-500 chai-rounded-lg chai-px-12 chai-py-12 chai-mb-16">
+                    <span class="chai-text-white chai-font-bold">⚡</span>
+                </div>
+                <p class="chai-text-white chai-font-bold chai-text-lg chai-mb-8">No Build Step</p>
+                <p class="chai-text-gray-400 chai-font-medium">
+                    Drop in one script tag. No Webpack,<br>no npm, no config. Works instantly.
+                </p>
+            </div>
+
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-28 chai-py-28">
+                <div class="chai-bg-green-500 chai-rounded-lg chai-px-12 chai-py-12 chai-mb-16">
+                    <span class="chai-text-white chai-font-bold">🔍</span>
+                </div>
+                <p class="chai-text-white chai-font-bold chai-text-lg chai-mb-8">DOM Scanning</p>
+                <p class="chai-text-gray-400 chai-font-medium">
+                    Walks every element on load, reads every<br>chai-* class, applies styles automatically.
+                </p>
+            </div>
+
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-28 chai-py-28">
+                <div class="chai-bg-blue-400 chai-rounded-lg chai-px-12 chai-py-12 chai-mb-16">
+                    <span class="chai-text-white chai-font-bold">🧩</span>
+                </div>
+                <p class="chai-text-white chai-font-bold chai-text-lg chai-mb-8">Familiar Syntax</p>
+                <p class="chai-text-gray-400 chai-font-medium">
+                    If you know Tailwind, you know chai.js.<br>Same pattern, built from raw JavaScript.
+                </p>
+            </div>
+
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-28 chai-py-28">
+                <div class="chai-bg-red-500 chai-rounded-lg chai-px-12 chai-py-12 chai-mb-16">
+                    <span class="chai-text-white chai-font-bold">🛠</span>
+                </div>
+                <p class="chai-text-white chai-font-bold chai-text-lg chai-mb-8">Fully Readable</p>
+                <p class="chai-text-gray-400 chai-font-medium">
+                    One plain JS file. Read it, understand<br>it, extend it. No black box.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ── UTILITIES ── -->
+    <section id="utilities" class="chai-bg-gray-800 chai-py-64 chai-px-40">
+
+        <div class="chai-text-center chai-mb-40">
+            <p class="chai-text-blue-400 chai-font-bold chai-mb-8">// WHAT'S INCLUDED</p>
+            <p class="chai-text-white chai-font-bold" style="font-family:'Bebas Neue';font-size:3.5rem;line-height:1;">All supported utilities.</p>
+        </div>
+
+        <div class="chai-flex chai-justify-center chai-gap-20">
+
+            <!-- Spacing -->
+            <div class="chai-bg-gray-900 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-24 chai-py-24">
+                <div class="chai-flex chai-items-center chai-gap-8 chai-mb-16">
+                    <div class="chai-bg-blue-500 chai-rounded-full chai-w-8 chai-h-8"></div>
+                    <p class="chai-text-white chai-font-bold">Spacing</p>
+                </div>
+                <div class="chai-flex chai-flex-col chai-gap-6">
+                    <span class="chai-text-blue-400 chai-font-medium">chai-p-{n}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-px-{n} · chai-py-{n}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-pt · pb · pl · pr</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-m-{n} · chai-m-auto</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-mx · my · mt · mb</span>
+                </div>
+            </div>
+
+            <!-- Colors -->
+            <div class="chai-bg-gray-900 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-24 chai-py-24">
+                <div class="chai-flex chai-items-center chai-gap-8 chai-mb-16">
+                    <div class="chai-bg-green-500 chai-rounded-full chai-w-8 chai-h-8"></div>
+                    <p class="chai-text-white chai-font-bold">Colors</p>
+                </div>
+                <div class="chai-flex chai-flex-col chai-gap-6">
+                    <span class="chai-text-blue-400 chai-font-medium">chai-bg-{color}-{shade}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-text-{color}-{shade}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-border-{color}-{shade}</span>
+                </div>
+                <div class="chai-flex chai-gap-8 chai-mt-16">
+                    <div class="chai-bg-blue-500 chai-rounded-md chai-w-20 chai-h-20"></div>
+                    <div class="chai-bg-red-500 chai-rounded-md chai-w-20 chai-h-20"></div>
+                    <div class="chai-bg-green-500 chai-rounded-md chai-w-20 chai-h-20"></div>
+                    <div class="chai-bg-gray-400 chai-rounded-md chai-w-20 chai-h-20"></div>
+                    <div class="chai-bg-black-100 chai-rounded-md chai-w-20 chai-h-20 chai-border-1 chai-border-gray-600"></div>
+                </div>
+            </div>
+
+            <!-- Typography -->
+            <div class="chai-bg-gray-900 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-24 chai-py-24">
+                <div class="chai-flex chai-items-center chai-gap-8 chai-mb-16">
+                    <div class="chai-bg-red-500 chai-rounded-full chai-w-8 chai-h-8"></div>
+                    <p class="chai-text-white chai-font-bold">Typography</p>
+                </div>
+                <div class="chai-flex chai-flex-col chai-gap-6">
+                    <span class="chai-text-blue-400 chai-font-medium">chai-text-{sm|md|lg|xl}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-font-{bold|semibold…}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-text-{center|left|right}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-decoration-none</span>
+                </div>
+            </div>
+
+            <!-- Borders -->
+            <div class="chai-bg-gray-900 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-24 chai-py-24">
+                <div class="chai-flex chai-items-center chai-gap-8 chai-mb-16">
+                    <div class="chai-bg-blue-400 chai-rounded-full chai-w-8 chai-h-8"></div>
+                    <p class="chai-text-white chai-font-bold">Borders</p>
+                </div>
+                <div class="chai-flex chai-flex-col chai-gap-6">
+                    <span class="chai-text-blue-400 chai-font-medium">chai-border-{n}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-rounded-sm · md · lg</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-rounded-xl · 2xl · 3xl</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-rounded-full</span>
+                </div>
+            </div>
+
+            <!-- Layout -->
+            <div class="chai-bg-gray-900 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-24 chai-py-24">
+                <div class="chai-flex chai-items-center chai-gap-8 chai-mb-16">
+                    <div class="chai-bg-green-400 chai-rounded-full chai-w-8 chai-h-8"></div>
+                    <p class="chai-text-white chai-font-bold">Layout</p>
+                </div>
+                <div class="chai-flex chai-flex-col chai-gap-6">
+                    <span class="chai-text-blue-400 chai-font-medium">chai-flex · chai-flex-col</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-justify-{center|between…}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-items-center</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-gap-{n}</span>
+                    <span class="chai-text-blue-400 chai-font-medium">chai-w-{n} · chai-h-{n}</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ── HOW TO USE ── -->
+    <section id="usage" class="chai-bg-gray-900 chai-py-64 chai-px-40">
+
+        <div class="chai-text-center chai-mb-48">
+            <p class="chai-text-blue-400 chai-font-bold chai-mb-8">// GET STARTED</p>
+            <p class="chai-text-white chai-font-bold" style="font-family:'Bebas Neue';font-size:3.5rem;line-height:1;">Up in 60 seconds.</p>
+        </div>
+
+        <div class="chai-flex chai-justify-center chai-gap-20">
+
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-28 chai-py-28">
+                <div class="chai-bg-blue-500 chai-rounded-lg chai-px-10 chai-py-6 chai-mb-16">
+                    <span class="chai-text-white chai-font-bold">01</span>
+                </div>
+                <p class="chai-text-white chai-font-bold chai-text-lg chai-mb-8">Download</p>
+                <p class="chai-text-gray-400 chai-font-medium">
+                    Grab <span class="chai-text-blue-400 chai-font-bold">chai.js</span> from GitHub.<br>
+                    Drop it in your project folder.
+                </p>
+            </div>
+
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-28 chai-py-28">
+                <div class="chai-bg-blue-500 chai-rounded-lg chai-px-10 chai-py-6 chai-mb-16">
+                    <span class="chai-text-white chai-font-bold">02</span>
+                </div>
+                <p class="chai-text-white chai-font-bold chai-text-lg chai-mb-8">Link it</p>
+                <p class="chai-text-gray-400 chai-font-medium chai-mb-12">
+                    One script tag at the<br>bottom of your body.
+                </p>
+                <div class="chai-bg-gray-900 chai-border-1 chai-border-gray-700 chai-rounded-lg chai-px-16 chai-py-10">
+                    <span class="chai-text-blue-300 chai-font-medium">&lt;script src=</span><span class="chai-text-green-300 chai-font-medium">"chai.js"</span><span class="chai-text-blue-300 chai-font-medium">&gt;&lt;/script&gt;</span>
+                </div>
+            </div>
+
+            <div class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-rounded-xl chai-px-28 chai-py-28">
+                <div class="chai-bg-blue-500 chai-rounded-lg chai-px-10 chai-py-6 chai-mb-16">
+                    <span class="chai-text-white chai-font-bold">03</span>
+                </div>
+                <p class="chai-text-white chai-font-bold chai-text-lg chai-mb-8">Write classes</p>
+                <p class="chai-text-gray-400 chai-font-medium">
+                    Use <span class="chai-text-blue-400 chai-font-bold">chai-*</span> class names<br>
+                    on any HTML element.<br>
+                    chai.js handles the rest.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ── CTA ── -->
+    <section class="chai-bg-blue-600 chai-py-64 chai-px-40 chai-text-center">
+        <p class="chai-text-blue-200 chai-font-bold chai-mb-8">// SHIP IT</p>
+        <p class="chai-text-white chai-font-bold chai-mb-16" style="font-family:'Bebas Neue';font-size:4rem;line-height:1;">
+            Ready to start building?
+        </p>
+        <p class="chai-text-blue-100 chai-text-lg chai-font-medium chai-mb-32">
+            One JS file. Zero setup. Style your entire UI with nothing but class names.
+        </p>
+        <div class="chai-flex chai-justify-center chai-gap-16">
+            <div class="chai-bg-white chai-px-32 chai-py-14 chai-rounded-lg">
+                <span class="chai-text-blue-600 chai-font-bold chai-text-lg">Download chai.js</span>
+            </div>
+            <div class="chai-border-1 chai-border-blue-300 chai-px-32 chai-py-14 chai-rounded-lg">
+                <span class="chai-text-white chai-font-bold chai-text-lg">⭐ Star on GitHub</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ── FOOTER ── -->
+    <footer class="chai-bg-gray-800 chai-border-1 chai-border-gray-700 chai-py-20 chai-px-40 chai-flex chai-justify-between chai-items-center">
+        <div class="chai-flex chai-items-center chai-gap-12">
+            <span class="chai-text-blue-400 chai-font-bold">chai.js</span>
+            <span class="chai-text-gray-600 chai-font-medium">|</span>
+            <span class="chai-text-gray-500 chai-font-medium">MIT License</span>
+        </div>
+        <p class="chai-text-gray-600 chai-font-medium">
+            // styled using only chai-* classes
+        </p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
