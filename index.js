@@ -116,7 +116,11 @@ allElements.forEach((element) => {
                 if (value === "center" || value === "left" || value === "right") {
                     element.style.textAlign = value;
                 } else if (fontsize[value]) {
-                    element.style.fontSize = fontsize[value];      
+                    element.style.fontSize = fontsize[value];
+                } else if (value === "white") {
+                    element.style.color = "#ffffff";          
+                } else if (value === "black") {
+                    element.style.color = "#000000";          
                 } else if (colorShades[value]?.[parts[2]]) {
                     element.style.color = colorShades[value][parts[2]]; 
                 }
